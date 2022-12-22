@@ -61,7 +61,6 @@ func (w *ChannelWriter) AddField(n int, value string) bool {
 
 func (w *ChannelWriter) Update() (resp *http.Response, err error) {
 	w.buildUrl()
-	log.Printf("URL: %s\n", w.url)
 
 	client := &http.Client{}
 	r, err := http.NewRequest("POST", w.url, nil)
