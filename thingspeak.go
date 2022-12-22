@@ -4,7 +4,6 @@ package gothingspeak
 
 import (
 	"fmt"
-	"log"
 	"net/http"
 )
 
